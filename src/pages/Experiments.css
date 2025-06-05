@@ -1,0 +1,79 @@
+
+.experimentos {
+  background-color: #91cfa4;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+  font-family: 'Sora', sans-serif;
+}
+
+.experimentos-card {
+  background-color: #E9FFF1;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+}
+
+.experimentos-titulo {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00c694;
+  margin-bottom: 2rem;
+}
+
+.experimentos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 2rem;
+}
+
+.experimento-item {
+  background-color: white;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.experimento-item:hover {
+  transform: translateY(-6px);
+}
+
+.experimento-icono {
+  font-size: 3rem;
+  color: #00c694;
+  margin-bottom: 1rem;
+}
+
+.experimento-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #1e1e1e;
+}
+
+.experimento-item p {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Dark Mode */
+body.dark .experimentos {
+  background-color: #1e1e1e;
+}
+
+body.dark .experimentos-card {
+  background-color: #2c2c2c;
+}
+
+body.dark .experimento-item {
+  background-color: #3a3a3a;
+}
+
+body.dark .experimento-item h3,
+body.dark .experimento-item p {
+  color: #f5f5f5;
+}

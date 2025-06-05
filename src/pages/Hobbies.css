@@ -1,0 +1,135 @@
+.hobbies {
+  padding: 4rem 2rem;
+  background-color: #91cfa4;
+  font-family: 'Sora', sans-serif;
+}
+
+.hobbies-card {
+  display: flex;
+  justify-content: center;
+}
+
+.card-style {
+  background-color: #E9FFF1;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 3rem;
+  max-width: 1100px;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+body.dark .card-style {
+  background-color: #2c2c2c;
+}
+
+.hobbies h2 {
+  font-size: 2.5rem;
+  color: #00b894;
+  margin-bottom: 2rem;
+}
+
+.hobbies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 2rem;
+  justify-items: center;
+}
+
+
+.hobbie-card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hobbie-card:hover {
+  transform: translateY(-5px);
+}
+
+.hobbie-card .emoji {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hobbie-card h3 {
+  margin: 0.5rem 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.hobbie-card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+  max-width: 200px;
+}
+
+body.dark .hobbies {
+  background-color: #1e1e1e;
+}
+
+body.dark .hobbie-card {
+  background-color: #333;
+  color: #f5f5f5;
+}
+
+.hobbies-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.hobbies-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+@media (max-width: 768px) {
+  .hobbies-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hobbies-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hobbies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hobbies-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+body.dark {
+  color: #f0f0f0;
+}
+
+
+body.dark .hobbies {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark .hobbie-card {
+  background-color: #2a2a2a;
+  color: white;
+}

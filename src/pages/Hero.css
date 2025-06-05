@@ -1,0 +1,161 @@
+/* Fondo exterior mint */
+.hero {
+  background-color: #91cfa4;
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Card blanca con sombra y esquinas */
+.hero-card {
+  background-color: #f2fef7;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem 5rem 2rem 3rem; 
+  max-width: 1100px;
+  width: 100%;
+  min-height: 400px; 
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Navbar dentro del hero */
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #00b894;
+}
+
+.navbar nav a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 1.5rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.navbar nav a:hover {
+  color: #00b894;
+}
+
+/* Botón modo claro/oscuro */
+.modo-toggle {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  margin-left: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.modo-toggle:hover {
+  transform: scale(1.2);
+}
+
+/* Contenido de texto */
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  color: #1e1e1e;
+}
+
+.hero h1 span {
+  color: #00b894;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero-button {
+  background-color: #81d8ae;
+  color: #1e1e1e;
+  padding: 0.9rem 1.8rem;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.2s;
+  box-shadow: 0 4px 10px #b0f3c1;
+}
+
+.hero-button:hover {
+  background-color: #00b894;
+  color: white;
+}
+
+/* Imagen posicionada */
+.hero-image {
+  position: absolute;
+  top: 120px;
+  left: 750px; /* ajusta según tu gusto */
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+
+.hero-image img {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+}
+
+/* Responsividad para tablets */
+@media (max-width: 1024px) {
+  .hero-image {
+    left: 60%;
+    top: 120px;
+  }
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .hero-image {
+    position: static;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+/* Modo oscuro */
+body.dark .hero {
+  background-color: #1e1e1e;
+}
+
+body.dark .hero-card {
+  background-color: #2c2c2c;
+}
+
+body.dark .hero h1,
+body.dark .hero p {
+  color: #f5f5f5;
+}
+
+body.dark .navbar .logo {
+  color: #81d8ae;
+}
+
+body.dark .navbar nav a {
+  color: #ddd;
+}
+
+body.dark .hero-button {
+  background-color: #a3f7bf;
+  color: #1e1e1e;
+}
