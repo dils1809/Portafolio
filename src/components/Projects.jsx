@@ -8,22 +8,19 @@ const proyectos = [
     titulo: 'E-Commerce H&M',
     descripcion: 'Simulación de tienda en línea con carrito, favoritos y filtros.',
     tecnologias: ['React', 'Vite', 'useContext'],
-    demo: 'https://ecommerce-hm-brown.vercel.app/',
     github: 'https://github.com/dils1809/ecommerce-hm'
   },
   {
     titulo: 'Replica Visual',
     descripcion: 'Replica del logo de Super Mario desde 0',
     tecnologias: ['CSS'],
-    demo: '#',
-    github: '#'
+    github: 'https://github.com/dils1809/Lab4Css.git'
   },
   {
     titulo: 'Plataforma de Incidentes',
     descripcion: 'API para que los empleados generen incidentes con sus equipos de trabajo.',
     tecnologias: ['Express', 'Node', 'SQLite'],
-    demo: '#',
-    github: '#'
+    github: 'https://github.com/dils1809/MiApi.git'
   }
 ]
 
@@ -47,7 +44,6 @@ export default function Projects() {
                 ))}
               </div>
               <div className="project-links">
-                <a href={proyecto.demo} target="_blank">Demo</a>
                 <a href={proyecto.github} target="_blank">GitHub</a>
               </div>
             </div>

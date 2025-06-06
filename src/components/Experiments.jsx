@@ -7,17 +7,14 @@ import { FaLaptopCode, FaCertificate, FaCalculator, FaCode } from 'react-icons/f
 const experimentos = [
   {
     titulo: 'Becada por 3 fundaciones',
-    descripcion: '..........',
     icono: <FaCertificate />
   },
   {
     titulo: 'Tutora de matemáticas',
-    descripcion: '........',
     icono: <FaCalculator />
   },
   {
-    titulo: '.....',
-    descripcion: '........',
+    titulo: 'Estudiante de Ing en computación',
     icono: <FaLaptopCode />
   },
 

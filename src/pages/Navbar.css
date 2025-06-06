@@ -3,18 +3,19 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.5rem 2rem;
-  background-color: #e8fdf5;
+  background-color: #f2fef7;
   color: #1e1e1e;
   position: sticky;
   top: 0;
   z-index: 100;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  font-family: 'Sora', sans-serif;
 }
 
 .nav-links {
   display: flex;
+  align-items: center;
   gap: 1.5rem;
-  list-style: none;
 }
 
 .nav-links a {
@@ -39,8 +40,15 @@
   border: none;
   font-size: 1.2rem;
   cursor: pointer;
+  margin-left: 0.5rem;
+  transition: transform 0.2s;
 }
 
+.toggle-mode:hover {
+  transform: scale(1.2);
+}
+
+/* MODO OSCURO */
 body.dark {
   background-color: #1e1e1e;
   color: #f5f5f5;
