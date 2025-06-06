@@ -1,3 +1,4 @@
+// src/components/Timeline.jsx
 import '../pages/Timeline.css'
 import AOS from 'aos'
 import 'aos/dist/aos.css'

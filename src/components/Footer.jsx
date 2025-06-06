@@ -41,7 +41,7 @@ export default function Footer() {
           <input
             type="text"
             name="name"
-            placeholder="Dilary"
+            placeholder="Tu nombre"
             value={formData.name}
             onChange={handleChange}
             required
@@ -63,7 +63,7 @@ export default function Footer() {
           ></textarea>
           <button type="submit">Enviar mensaje</button>
         </form>
-        <p className="footer-note">© {new Date().getFullYear()} Tu Nombre. Todos los derechos reservados.</p>
+        <p className="footer-note">© {new Date().getFullYear()} Dilary. Todos los derechos reservados.</p>
       </div>
     </footer>
   )
